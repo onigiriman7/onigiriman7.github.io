@@ -228,6 +228,12 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
+@keyframes rotate{
+  from{transform:rotateZ(180deg)}
+  to{
+    transform: rotateZ(0deg);
+  } 
+}
 .imgwrap{
   overflow: hidden;
   height: 300px;
@@ -236,8 +242,9 @@ html {
   border-radius: 50%;
   transition: transform 0.3s ease;
   border:3px solid white;
- 
+  animation: rotate ease-in;
 }
+
 .about img{
   border-radius: 50%;
   height: 300px;
@@ -264,7 +271,7 @@ html {
   font-size: 26px;
   text-align: center;
   padding: 40px;
-  animation: bounce 5s infinite;
+  
 }
 
 #four{
