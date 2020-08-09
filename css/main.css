@@ -1,114 +1,192 @@
-body,html{
-    width:100vw;
-    overflow-x: hidden;
-    margin:0;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
+body,
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-*{
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ONE FIRST SECTION */
+#one {
+  background-color: orange;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 200px;
+}
+#one h1 {
+  font-size: 186px;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#one h2 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#one a {
+  padding: 18px 24px;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0px 3px 0px 1px lightgray, 1px 1px 30px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease;
+}
+#twoL a {
+  padding: 18px 24px;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0px 3px 0px 1px rgb(243, 75, 232),
+    1px 1px 30px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  text-decoration: none;
+  color: rgb(243, 75, 187);
+  transition: transform 0.2s ease;
+}
+#one a:hover,
+#twoL a:hover {
+  box-shadow: 1px 1px 50px 5px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+}
+
+/* TWO SECOND SECTON */
+#two {
+  background-color: lightgreen;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* left and right buttons */
+#left,
+#right,
+#bR,
+#bL {
+  position: absolute;
+  padding: 20px 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  outline: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: white;
+  transition: transform 0.4s ease;
+}
+#left:hover,
+#right:hover,
+#bR:hover,
+#bL:hover {
+  transform: rotateZ(360deg);
+  border: 4px solid white;
+  font-weight: bolder;
+}
+
+#left {
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: 20px;
+}
+#right {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: 20px;
+}
+#bL {
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: 20px;
+}
+#bR {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+/*right and left hidden sections of second section  */
+#twoR,
+#twoL {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#twoL {
+  background-image: url("https://giffiles.alphacoders.com/209/209156.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+#twoL h1 {
+  font-size: 132px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-shadow: 1px 2px 0px rgb(243, 75, 232), 1px 1px 10px black;
+  width: 100%;
+  text-align: center;
+}
+#two h2 {
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  text-shadow: 1px 2px 0px rgb(243, 75, 232), 1px 1px 10px black;
+  width: 100%;
+  text-align: center;
+}
+#twoR {
+  background-color: wheat;
+}
+#twoR h1 {
+  font-size: 72px;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  #one {
     padding: 0;
-    margin:0;
-}
-#one{
-    background-color: orange;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 200px;
-}
-#one h1{
-    font-size: 186px;
-    width: 100%;
-    text-align: center;
-    padding:0;
-    margin:0;
-}
-#one h2{
-    padding:0;
-    margin:0;
-    width:100%;
-    text-align: center;
-}
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  #one h1 {
+    font-size: 72px;
+  }
 
-#one a{
-    padding: 18px 24px;
-    background-color: white;
-    margin: 20px;
-    box-shadow: 0px 3px 0px 1px lightgray, 1px 1px 30px 5px rgba(0,0,0,0.1);
-    border-radius: 3px;
-    text-decoration: none;
-    color:black;
-    transition: transform 0.2s ease;
-}
-#one a:hover{
-    box-shadow:1px 1px 50px 5px rgba(0,0,0,0.1);
-    transform: scale(0.95);
-
-}
-
-#two{
-    background-color: lightgreen;
-    color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#left,#right{
-    position: absolute;
-    padding:20px 20px;
-    border-radius: 50%;
-    border:2px solid white;
-    outline:none;
-    background-color: transparent;
-    font-size: 24px;
-    color:white;
-    transition: transform 0.4s ease;
-}
-#left:hover,#right:hover{
-    transform:rotateZ(360deg);
-    border:4px solid white;
-    font-weight: bolder;
-
-}
-
-#left{
-    left:0;
-    right: 0;
-    margin-right: auto;
-    margin-left: 20px;
-}
-#right{
-    left:0;
-    right:0;
-    margin-left: auto;
-    margin-right: 20px;
-}
-
-#twoL, #twoR{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#three{
-    
-}
-
-
-
-
-@media only screen and (max-width: 500px ){
-    #one{
-        padding: 0;
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-    #one h1{
-        font-size: 72px;
-    }
+  #twoL h1 {
+    font-size: 62px;
+  }
+  #twoL h2 {
+    font-size: 18px;
+  }
+  #twoR h1{
+      font-size: 48px;
+  }
+  #left,
+  #right,
+  #bR,
+  #bL {
+    transform: scale(0.5);
+  }
 }
