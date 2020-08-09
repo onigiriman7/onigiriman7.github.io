@@ -304,6 +304,10 @@ html {
   #twoR h1{
       font-size: 48px;
   }
+  #two{
+    padding-bottom:50px;
+    padding-top: 30px;
+  }
   #left,
   #right,
   #bR,
