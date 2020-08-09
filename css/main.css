@@ -1,0 +1,92 @@
+body,html{
+    width:100vw;
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    padding: 0;
+    margin:0;
+}
+#one{
+    background-color: orange;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 200px;
+}
+#one h1{
+    font-size: 186px;
+    width: 100%;
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+#one h2{
+    padding:0;
+    margin:0;
+    width:100%;
+    text-align: center;
+}
+
+#one a{
+    padding: 18px 24px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 0px 3px 0px 1px lightgray, 1px 1px 30px 5px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    text-decoration: none;
+    color:black;
+    transition: transform 0.2s ease;
+}
+#one a:hover{
+    box-shadow:1px 1px 50px 5px rgba(0,0,0,0.1);
+    transform: scale(0.95);
+
+}
+
+#two{
+    background-color: lightgreen;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#two button{
+    position: absolute;
+    padding:18px 20px;
+}
+#left{
+    left:0;
+    right: 0;
+    margin-right: auto;
+    margin-left: 20px;
+}
+#right{
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#three{
+    
+}
+
+
+
+
+@media only screen and (max-width: 500px ){
+    #one{
+        padding: 0;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    #one h1{
+        font-size: 72px;
+    }
+}

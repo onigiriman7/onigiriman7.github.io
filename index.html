@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSG Test</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </head>
+  <body>
+    <!-- fixed content here -->
+    <div id="ssg-container">
+      <!-- first page NAME AND LINKS-->
+      <div id="one" class="ssg-page one">
+        <h1>Varun K J</h1>
+        <h2>
+          One guy for all your UI&UX solutions
+        </h2>
+        <a target="_blank" href="https://github.com/onigiriman7/"
+          ><span
+            class="iconify"
+            data-icon="logos-github-icon"
+            data-inline="false"
+          ></span
+          > Github</a
+        >
+        <a href="#">Resume</a>
+      </div>
+
+      <!-- second page ABOUT ME -->
+      <div id="two" class="ssg-page two">
+        Page 2 content
+        <button id="left" onclick="ssg.revealLeft()">left</button>
+        <!--PV PRODUCTIONS-->
+        <div class="ssg-child-left">
+          hidden content (left)
+          <button onclick="ssg.conceal()">back</button>
+        </div>
+        <button id="right" onclick="ssg.revealRight()">right</button>
+        <!--WORK EXPERIENCE-->
+        <div class="ssg-child-right">
+          hidden content (left)
+          <button onclick="ssg.conceal()">back</button>
+        </div>
+      </div>
+
+
+
+
+      <!--ISOMETRIC CARD PROJECTS-->
+      <div id="three" class="ssg-page three"></div>
+      <!--Contact Info-->
+      <div id="four" class="ssg-page four">
+        Page 2 content
+        <button onclick="ssg.revealLeft()">left</button>
+        <div class="ssg-child-left">
+          hidden content (left)
+          <button onclick="ssg.conceal()">back</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/ssg.js"></script>
+  </body>
+</html>
