@@ -122,6 +122,13 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
+@keyframes bounce{
+  0% {margin-top: -20px;}
+  50% {margin-top: 0px;}
+  100% {
+    margin-top: -20px;
+  }
+}
 /* left and right buttons */
 #left,
 #right,
@@ -136,6 +143,7 @@ html {
   font-size: 24px;
   color: white;
   transition: transform 0.4s ease;
+  animation: bounce 1s infinite;
 }
 #left:hover,
 #right:hover,
@@ -228,6 +236,7 @@ html {
   border-radius: 50%;
   transition: transform 0.3s ease;
   border:3px solid white;
+ 
 }
 .about img{
   border-radius: 50%;
@@ -235,6 +244,7 @@ html {
   width:300px;
   object-fit: cover;
   transition: transform 0.3s ease;
+  
 }
 .about img:hover{
   transform: scale(1.3);
@@ -247,12 +257,14 @@ html {
   width: 100% !important;
   text-shadow: none !important;
   font-size: 48px!important;
+  
 }
 .about p{
   width:50%;
   font-size: 26px;
   text-align: center;
   padding: 40px;
+  animation: bounce 5s infinite;
 }
 
 #four{
