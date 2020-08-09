@@ -163,6 +163,46 @@ html {
   padding: 0;
   margin: 0;
 }
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imgwrap{
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  border:3px solid white;
+}
+.about img{
+  border-radius: 50%;
+  height: 300px;
+  width:300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.about img:hover{
+  transform: scale(1.3);
+
+}
+.imgwrap:hover{
+  transform: rotateZ(360deg);
+}
+.about h2{
+  width: 100% !important;
+  text-shadow: none !important;
+  font-size: 48px!important;
+}
+.about p{
+  width:50%;
+  font-size: 26px;
+  text-align: center;
+  padding: 40px;
+}
 
 #four{
   background-color: lightblue;
@@ -197,5 +237,20 @@ html {
   #bR,
   #bL {
     transform: scale(0.5);
+  }
+  .about img{
+    height:150px;
+    width:150px;
+  }
+  .imgwrap{
+    height:150px;
+    width:150px;
+  }
+  .about h2{
+    font-size: 23px !important;
+    margin-top: 20px;
+  }
+  .about p{
+    font-size: 20px !important;
   }
 }
