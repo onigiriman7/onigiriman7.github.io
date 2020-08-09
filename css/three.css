@@ -3,7 +3,7 @@
     width: 100%;
     position: absolute;
     overflow: hidden;
-
+    overflow-y: hidden;
 }
 #msg{
     font-family: fantasy;
@@ -91,7 +91,7 @@
 
 
 @media only screen and (max-width: 500px){
-    .b1,.b2,.b6{
+    .b1,.b2,.b6,.b11{
         display: none;
     }
     #msg{
