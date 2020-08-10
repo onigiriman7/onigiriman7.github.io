@@ -279,14 +279,24 @@ html {
 }
 
 #four {
-  background-color: lightblue;
+  background-color: rgba(255, 255, 0, 0.698);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 200px;
-  padding-bottom: 200px;
+ 
+}
+
+#four h1{
+  position: absolute;
+  color: black;
+  z-index: 1000;
+  top:0;
+  margin-top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 70px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -349,6 +359,8 @@ html {
     left:100%;
   }
   #four h1 {
-    font-size: 18px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
   }
 }
